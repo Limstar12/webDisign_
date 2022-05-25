@@ -1,0 +1,64 @@
+ul.d1ul{
+    width: 400px;
+}
+ul.d2ul{
+    transition: 1s;
+    left: 0;
+    left: 0;
+    top: 100%;
+    background-color: white;
+    z-index: 111;
+}
+ul.d1ul .d1li{
+    height: 30px;
+}
+ul.d1ul:hover ul.d2ul{
+    height: 150px;
+}
+ul.d1ul li.d1li:hover{
+    background-color: black;
+    color: white;
+}
+ul.d2ul li:hover{
+    background-color: black;
+    color: white
+}
+.noticeBox,
+.galleryBox{
+    width: 90px;
+}
+
+
+
+.noticeBox ul,
+.galleryBox .gallery{
+    left: 0;
+    right: 0;
+    display: none;
+}
+.galleryBox .gallery,
+.noticeul{
+padding: 1.5rem 0;
+}
+
+.noticeBox.on ul,
+.galleryBox.on .gallery{
+    display: block;
+}
+.noticeul li{
+    margin: 7px 0;
+}
+
+.noticeBox ul a{
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 250px;
+    overflow: hidden;
+}
+
+.gallery img{
+    width: 120px;
+    height: 120px;
+}
+
