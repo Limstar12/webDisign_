@@ -3,25 +3,28 @@ ul.d1ul{
 }
 ul.d2ul{
     transition: 1s;
+    height: 0;
     left: 0;
-    left: 0;
+    right: 0;
     top: 100%;
     background-color: white;
     z-index: 111;
+    margin: 0 -1px;
 }
 ul.d1ul .d1li{
     height: 30px;
+    padding: 20px 7px;
 }
 ul.d1ul:hover ul.d2ul{
     height: 150px;
 }
-ul.d1ul li.d1li:hover{
+ul.d1ul li.d1li a:hover{
     background-color: black;
-    color: white;
+    color: white !important;
 }
-ul.d2ul li:hover{
+ul.d2ul li a:hover{
     background-color: black;
-    color: white
+    color: white !important;
 }
 .noticeBox,
 .galleryBox{
@@ -60,5 +63,12 @@ padding: 1.5rem 0;
 .gallery img{
     width: 120px;
     height: 120px;
+}
+
+.notice,
+.galleryBox>a{
+    display: block;
+    line-height: 30px;
+    padding-top: 20px;
 }
 
