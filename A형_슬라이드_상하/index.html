@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>슬라이드_상하</title>
+    <link rel="stylesheet" href="./css/hj.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="./js/hj.js"></script>
+</head>
+<style>
+    *{list-style: none; text-decoration: none; margin: 0; padding: 0;}
+    .inner{width: 1200px;}
+    .d-flex{display: flex;}
+    .d-none{display: none;}
+    .position-absolute{position: absolute;}
+    .position-relative{position: relative;}
+    .justify-content-between{justify-content: space-between;}
+    .justify-content-around{justify-content: space-around;}
+    .h-100{height: 100px;}
+    .h-200{height: 200px;}
+    .h-300{height: 300px;}
+    .align-items-center{align-items: center;}
+    .bg-white{background-color: white;}
+    .bg-pink{background-color: #bf6564;}
+    .text-pink{color: #bf6564;}
+    .m-auto{margin: 0 auto;}
+    .text-center{text-align: center;}
+    .overflow-hidden{overflow: hidden;}
+    .col{width: 33.33333333%;}
+    .col-6{width: 66.66666666%;}
+    .border{border: 1px solid black;}
+</style>
+<body>
+    <div class="container position-relative">
+        <div id="warp" class="inner d-flex justify-content-between align-items-center m-auto h-100">
+            <h1 class="logo"><a href="/"><img src="./img/logo.png" alt=""></a></h1>
+            <ul class="d1ul d-flex bg-white">
+                <li class="d1li position-relative">
+                    <a href="#none" class="d1a">탑</a>
+                    <ul class="d2ul position-absolute text-center bg-white">
+                        <li class="d2li"><a href="#none" class="d2a">블라우스</a></li>
+                        <li class="d2li"><a href="#none" class="d2a">티</a></li>
+                        <li class="d2li"><a href="#none" class="d2a">셔츠</a></li>
+                        <li class="d2li"><a href="#none" class="d2a">니트</a></li>
+                    </ul>
+                </li>
+                <li class="d1li position-relative">
+                    <a href="#none" class="d1a">아우터</a>
+                    <ul class="d2ul position-absolute text-center bg-white">
+                        <li class="d2li"><a href="#none" class="d2a">쟈켓</a></li>
+                        <li class="d2li"><a href="#none" class="d2a">코트</a></li>
+                        <li class="d2li"><a href="#none" class="d2a">가디건</a></li>
+                        <li class="d2li"><a href="#none" class="d2a">머플러</a></li>
+                    </ul>
+                </li>
+                <li class="d1li position-relative">
+                    <a href="#none" class="d1a">팬츠</a>
+                    <ul class="d2ul position-absolute text-center bg-white">
+                        <li class="d2li"><a href="#none" class="d2a">청바지</a></li>
+                        <li class="d2li"><a href="#none" class="d2a">짧은바지</a></li>
+                        <li class="d2li"><a href="#none" class="d2a">긴바지</a></li>
+                        <li class="d2li"><a href="#none" class="d2a">레깅스</a></li>
+                    </ul>
+                </li>
+                <li class="d1li position-relative">
+                    <a href="#none" class="d1a">악세서리</a>
+                    <ul class="d2ul position-absolute text-center bg-white">
+                        <li class="d2li"><a href="#none" class="d2a">귀고리</a></li>
+                        <li class="d2li"><a href="#none" class="d2a">목걸이</a></li>
+                        <li class="d2li"><a href="#none" class="d2a">반지</a></li>
+                        <li class="d2li"><a href="#none" class="d2a">팔찌</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="slider" class="inner m-auto h-300 overflow-hidden">
+            <ul class="">
+                <li><a href="#none"><img src="./img/slide01.png" alt=""></a></li>
+                <li><a href="#none"><img src="./img/slide02.png" alt=""></a></li>
+                <li><a href="#none"><img src="./img/slide03.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="inner h-200 d-flex m-auto justify-content-center">
+            <div class="no_gall_Box d-flex position-relative col">
+                <div class="noticeBox on">
+                    <a href="#none">공지사항</a>
+                    <ul class="position-absolute noticeul">
+                        <li class="d-flex align-items-center firstli"><a href="#none" class="col-6">공지사항내용공지사항내용공지사항내용공지사항내용</a><span class="col">공지사항날짜</span></li>
+                        <li class="d-flex align-items-center"><a href="#none" class="col-6">공지사항내용공지사항내용공지사항내용공지사항내용</a><span class="col">공지사항날짜</span></li>
+                        <li class="d-flex align-items-center"><a href="#none" class="col-6">공지사항내용공지사항내용공지사항내용공지사항내용</a><span class="col">공지사항날짜</span></li>
+                        <li class="d-flex align-items-center"><a href="#none" class="col-6">공지사항내용공지사항내용공지사항내용공지사항내용</a><span class="col">공지사항날짜</span></li>
+                    </ul>
+                </div>
+                <div class="galleryBox">
+                    <a href="#none">갤러리</a>
+                    <ul class="gallery position-absolute d-flex align-items-center justify-content-around">
+                        <li class="galley1"><a href="#none"><img src="./img/gallery01.png" alt=""></a></li>
+                        <li class="galley2"><a href="#none"><img src="./img/gallery02.png" alt=""></a></li>
+                        <li class="galley3"><a href="#none"><img src="./img/gallery03.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="miniBanner col"><a href="#none"><img src="./img/banner.png" alt=""></a></div>
+            <div class="quickBox col"><a href="#none"><img src="./img/link.png" alt=""></a></div>
+        </div>
+        <div class="inner m-auto d-flex justify-content-between align-items-center h-100">
+            <h3 class="logo"><a href="#none"><img src="./img/logo.png" alt=""></a></h3>
+            <p>Copyright All rights reserved JUST 쇼핑몰</p>
+            <div class="snsBox d-flex">
+                <a href="#none">페이스북<img src="" alt=""></a>
+                <a href="#none">인스타그램<img src="" alt=""></a>
+                <a href="#none">페이스북<img src="" alt=""></a>
+            </div>
+        </div>
+        <div class="pop position-absolute bg-white border d-none"><a href="">팝업발생!!!!!</a><button class="button">close</button></div>
+    </div>
+</body>
+</html>
