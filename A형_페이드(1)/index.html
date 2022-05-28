@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인_페이드</title>
+    <link rel="stylesheet" href="./css/hj.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="./js/hj.js"></script>
+    <style>
+        *{margin: 0; padding: 0; text-decoration: none; list-style: none; color: black;}
+        a{padding: 0; margin: 0;}
+        .d-flex{display: flex;}
+        .d-none{display: none;}
+        .justify-content-between{justify-content: space-between;}
+        .justify-content-conter{justify-content: center;}
+        .align-items-center{align-items: center;}
+        .inner{width: 1200px; margin: 0 auto;}
+        .h-100{height: 100px;}
+        .h-200{height: 200px;}
+        .h-300{height: 300px;}
+        .position-absolute{position: absolute;}
+        .position-relative{position: relative;}
+        .border{border: 1px solid black;}
+        .overflow-hidden{overflow: hidden;}      
+        .l-0{left: 0;}
+        .r-0{right: 0;}
+        .t-100{top: 100%;}
+        .m-1{margin: 0.5rem;}
+        .m-2{margin: 1rem;}
+        .p-1{padding: 0.5rem;}
+        .p-2{padding: 1rem;}
+        .p-3{padding: 1.5rem;}
+        .p-4{padding: 1rem 2rem;}
+        .text-center{text-align: center;}
+        .bg-white{background-color: white;}
+        .font2em{font-size: 1.5em;}
+        .font1em{font-size: 1em;}
+        .col{width: 33.33333333%;}
+        .col-6{width: 66.66666666%;}
+    </style>
+</head>
+<body>
+    <div class="container position-relative">
+        <header id="wraper" class="inner justify-content-between align-items-center d-flex h-100">
+            <h1 class="logo"><a href="#none"><img src="./img/logo.png" alt=""></a></h1>
+            <ul class="d1ul d-flex justify-content-between align-items-center text-center bg-white">
+                <li class="d1li position-relative p-4">
+                    <a href="#none" class="d1a font2em">강원천문대</a>
+                    <ul class="d2ul position-absolute l-0 r-0 t-100 font1em bg-white">
+                        <li class="d2li m-1"><a href="#none" class="d2a">천문대소개</a></li>
+                        <li class="d2li m-1"><a href="#none" class="d2a">인사말</a></li>
+                        <li class="d2li m-1"><a href="#none" class="d2a">오시는길</a></li>
+                    </ul>
+                </li>
+                <li class="d1li position-relative p-4">
+                    <a href="#none" class="d1a font2em">이용안내</a>
+                    <ul class="d2ul position-absolute l-0 r-0 t-100 font1em bg-white">
+                        <li class="d2li m-1"><a href="#none" class="d2a">프로그램</a></li>
+                        <li class="d2li m-1"><a href="#none" class="d2a">관람시간표</a></li>
+                        <li class="d2li m-1"><a href="#none" class="d2a">이달의 별자리</a></li>
+                    </ul>
+                </li>
+                <li class="d1li position-relative p-4">
+                    <a href="#none" class="d1a font2em">천문대예약</a>
+                    <ul class="d2ul position-absolute l-0 r-0 t-100 font1em bg-white">
+                        <li class="d2li m-1"><a href="#none" class="d2a">예약하기</a></li>
+                        <li class="d2li m-1"><a href="#none" class="d2a">예약확인</a></li>
+                        <li class="d2li m-1"><a href="#none" class="d2a">예약취소</a></li>
+                    </ul>
+                </li>
+                <li class="d1li position-relative p-4">
+                    <a href="#none" class="d1a font2em">커뮤니티</a>
+                    <ul class="d2ul position-absolute l-0 r-0 t-100 font1em bg-white">
+                        <li class="d2li m-1"><a href="#none" class="d2a">공지사항</a></li>
+                        <li class="d2li m-1"><a href="#none" class="d2a">방문후기</a></li>
+                        <li class="d2li m-1"><a href="#none" class="d2a">자유게시판</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+        <div class="inner h-300" id="slider">
+            <ul class="position-relative">
+                <li class="position-absolute show"><img src="./img/slide1.png" alt=""></li>
+                <li class="position-absolute"><img src="./img/slide2.png" alt=""></li>
+                <li class="position-absolute"><img src="./img/slide3.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="inner h-200 d-flex">
+            <div class="not_gall_Box col position-relative d-flex">
+                <div class="noticeBox on">
+                    <a href="#none">공지사항</a>
+                    <ul class="l-0 r-0 position-absolute noticeul">
+                        <li class="d-flex align-items-center justify-content-between firstli"><a href="#none">공지사항내용공지사항내용공지사항내용공지사항내용</a><span>공지사항날짜</span></li>
+                        <li class="d-flex align-items-center justify-content-between"><a href="#none">공지사항내용공지사항내용공지사항내용공지사항내용</a><span>공지사항날짜</span></li>
+                        <li class="d-flex align-items-center justify-content-between"><a href="#none">공지사항내용공지사항내용공지사항내용공지사항내용</a><span>공지사항날짜</span></li>
+                        <li class="d-flex align-items-center justify-content-between"><a href="#none">공지사항내용공지사항내용공지사항내용공지사항내용</a><span>공지사항날짜</span></li>
+                    </ul>
+                </div>
+                <div class="galleryBox">
+                    <a href="#none">갤러리</a>
+                    <div class="gallery justify-content-between align-items-center l-0 r-0 position-absolute">
+                        <div class="gallImg"><a href="#none"><img src="./img/gal1.png" alt=""></a></div>
+                        <div class="gallImg"><a href="#none"><img src="./img/gal2.png" alt=""></a></div>
+                        <div class="gallImg"><a href="#none"><img src="./img/gal3.png" alt=""></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="subBanner col">
+                <a href="#none"><img src="./img/banner.png" alt=""></a>
+            </div>
+            <div class="linkBox col">
+                <a href="#none"><img src="./img/link.png" alt=""></a>
+            </div>
+        </div>
+        <footer class="inner d-flex h-100 align-items-center">
+            <h3 class="logo col"><a href=""><img src="./img/logo.png" alt=""></a></h3>
+            <div class="footText col-6 text-center">
+                <ul class="foot1 d-flex justify-content-between">
+                    <li><a href="">법적고지</a></li>
+                    <li><a href="">개인정보취급방침</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                </ul>
+                <p class="foot2">copyright All rights reserved 강원천문대</p>
+            </div>
+        </footer>
+        <div class="pop position-absolute bg-white d-none">
+            <p>팝업이다아!!!!</p>   
+            <button>close</button>
+        </div>
+    </div>
+</body>
+</html>
