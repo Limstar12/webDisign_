@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A형_페이드_패밀리사이트</title>
+    <link rel="stylesheet" href="./css/hj.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="./js/hj.js"></script>
+    <style>
+        *{text-decoration: none; padding: 0; margin: 0; list-style: none; color: black;}
+        .inner{width: 1200px; margin: 0 auto;}
+        .d-flex{display: flex;}
+        .d-none{display: none;}
+        .col{width: 33.33333333%;}
+        .col-6{width: 66.666666666%;}
+        .align-items-center{align-items: center;}
+        .align-items-end{align-items: flex-end;}
+        .justify-content-between{justify-content: space-between;}
+        .l-0{left: 0;}
+        .r-0{right: 0;}
+        .t-0{top: 0;}
+        .t-100{top: 100%;}
+        .position-absolute{position: absolute;}
+        .position-relative{position: relative;}
+        .font2em{font-size: 1.5em;}
+        .font1em{font-size: 0.8em;}
+        .bg-white{background-color: white;}
+        .text-white{color: white;}
+        .text-center{text-align: center;}
+        .h-100{height: 100px;}
+        .h-200{height: 200px;}
+        .h-300{height: 300px;}
+    </style>
+</head>
+<body>
+    <div class="container position-relative">
+        <div id="wrap" class="inner d-flex justify-content-between align-items-end position-relative h-100">
+            <h1 class="logo"><a href="#none"><img src="./img/logo.png" alt="로고"></a></h1>
+            <ul class="d1ul d-flex text-center">
+                <li class="d1li position-relative">
+                    <a href="#none" class="d2a">회사소개</a>
+                    <ul class="d2ul position-absolute l-0 r-0 t-100">
+                        <li class="d2li"><a href="#none">인사말</a></li>
+                        <li class="d2li"><a href="#none">조직구성도</a></li>
+                        <li class="d2li"><a href="#none">오시는길</a></li>
+                    </ul>
+                </li>
+                <li class="d1li position-relative">
+                    <a href="#none" class="d2a">사업영역</a>
+                    <ul class="d2ul position-absolute l-0 r-0 t-100">
+                        <li class="d2li"><a href="#none">전원주택</a></li>
+                        <li class="d2li"><a href="#none">도시재생</a></li>
+                        <li class="d2li"><a href="#none">인테리어</a></li>
+                    </ul>
+                </li>
+                <li class="d1li position-relative">
+                    <a href="#none" class="d2a">입주정보</a>
+                    <ul class="d2ul position-absolute l-0 r-0 t-100">
+                        <li class="d2li"><a href="#none">입주단지</a></li>
+                        <li class="d2li"><a href="#none">입주캘린더</a></li>
+                    </ul>
+                </li>
+                <li class="d1li position-relative">
+                    <a href="#none" class="d2a">고객센터</a>
+                    <ul class="d2ul position-absolute l-0 r-0 t-100">
+                        <li class="d2li"><a href="#none">공지사항</a></li>
+                        <li class="d2li"><a href="#none">건축상담</a></li>
+                        <li class="d2li"><a href="#none">홍보자료실</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="inner slider position-relative h-300">
+            <ul>
+                <li class="position-absolute show"><a href="#none"><img src="./img/slide1.png" alt="슬라이드1"></a></li>
+                <li class="position-absolute"><a href="#none"><img src="./img/slide2.png" alt="슬라이드2"></a></li>
+                <li class="position-absolute"><a href="#none"><img src="./img/slide3.png" alt="슬라이드3"></a></li>
+            </ul>
+        </div>
+        <div class="inner d-flex h-200">
+            <div class="noticeBox Box col">
+                <a href="#none">공지사항</a>
+                <div class="notice">
+                    <div class="noti_Text noti_Text1 d-flex align-items-center"><a href="#none">공지사항내용공지사항내용공지사항내용공지사항내용</a><span>공지사항날짜</span></div>
+                    <div class="noti_Text d-flex align-items-center"><a href="#none">공지사항내용공지사항내용공지사항내용공지사항내용</a><span>공지사항날짜</span></div>
+                    <div class="noti_Text d-flex align-items-center"><a href="#none">공지사항내용공지사항내용공지사항내용공지사항내용</a><span>공지사항날짜</span></div>
+                    <div class="noti_Text d-flex align-items-center"><a href="#none">공지사항내용공지사항내용공지사항내용공지사항내용</a><span>공지사항날짜</span></div>
+                </div>
+            </div>
+            <div class="galleryBox Box col">
+                <a href="#none">갤러리</a>
+                <div class="gallery d-flex justify-content-between align-items-center">
+                    <div class="gall_Img1"><a href="#none"><img src="./img/gal1.png" alt="갤러리1"></a></div>
+                    <div class="gall_Img2"><a href="#none"><img src="./img/gal2.png" alt="갤러리2"></a></div>
+                    <div class="gall_Img3"><a href="#none"><img src="./img/gal3.png" alt="갤러리3"></a></div>
+                </div>
+            </div>
+            <div class="LinkBox col">
+                <a href="#none"><img src="./img/link.png" alt="바로가기"></a>
+            </div>
+        </div>
+        <footer class="inner h-100 d-flex align-items-center justify-content-between">
+            <div class="foot_Box text-center">
+                <div class="foot_policy d-flex align-items-center justify-content-between">
+                    <a href="#none">법적고지</a><a href="#none">개인정보처리방침</a><a href="#none">개인정보취급방침</a>
+                </div>
+                <p>copyright All rights reserved 유진건설</p>
+            </div>
+            <select class="">
+                <option value="패밀리사이트">패밀리사이트</option>
+                <option value="패밀리사이트1">패밀리사이트3</option>
+                <option value="패밀리사이트2">패밀리사이트2</option>
+                <option value="패밀리사이트">패밀리사이트1</option>
+            </select>
+        </footer>
+        <div class="popBox bg-white d-none">
+            <p>팝업이다아아아아</p>
+            <button>close</button>
+        </div>
+    </div>
+</body>
+</html>
