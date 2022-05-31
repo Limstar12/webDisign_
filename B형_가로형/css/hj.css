@@ -1,0 +1,100 @@
+#wrap, footer{
+    background-color: #8c6b0a;
+}
+.d1li{
+    padding: 15px 30px;
+}
+.d2li{
+    line-height: 1.6;
+}
+.d2ul{
+    height: 0;
+    transition: 0.5s;
+    z-index: 2;
+    background-color: #8c6b0a;
+}
+
+.d1ul:hover .d2ul{
+    height: 130px;
+    transition-delay: 0;
+}
+
+.d1ul:hover, .d1ul:hover .d2ul{
+    background-color: white;
+}
+.d1li:hover{
+    background-color: #a9996a;
+}
+.d2li:hover{
+    background-color: #a9996ab3
+}
+
+.gallery img{
+    width: 120px;
+    height: 120px;
+}
+
+.noticeBox > a, .galleryBox >a{
+    line-height: 3;
+    padding: 13px 5px 14px;
+}
+
+.notice, .gallery{
+    display: none;
+    padding: 15px 0 13px;
+    background-color: #8c6b0a63;
+
+}
+
+.noticeBox.on .notice{
+    display: block ;
+}
+
+.galleryBox.on .gallery{
+    display: flex ;
+}
+.noti_text a{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 230px;
+    display: inline-block;
+    white-space: nowrap;
+}
+.noti_text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 25px 5px;
+}
+
+.noticeBox.on > a, .galleryBox.on > a{
+    background-color: #8c6b0a63;
+}
+
+footer .logo{
+    width: 200px;
+}
+footer .foot_Box{
+    width: 1000px;
+}
+
+.foot_Box > p, .foot_Box > div{
+    padding: 5px 0;
+}
+
+.popBox{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pop{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}

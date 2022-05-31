@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/hj.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="./js/hj.js"></script>
+    <style>
+        *{margin: 0; padding: 0; text-decoration: none; list-style: none; color: #333333;}
+        a{padding: 0; margin: 0;}
+        .d-flex{display: flex;}
+        .d-none{display: none;}
+        .justify-content-between{justify-content: space-between;}
+        .justify-content-center{justify-content: center;}
+        .justify-content-around{justify-content: space-around;}
+        .align-items-center{align-items: center;}
+        .inner{width: 1200px; margin: 0 auto;}
+        .h-100{height: 100px;}
+        .h-200{height: 200px;}
+        .h-300{height: 300px;}
+        .position-absolute{position: absolute;}
+        .position-relative{position: relative;}
+        .border{border: 1px solid black;}
+        .overflow-hidden{overflow: hidden;}      
+        .l-0{left: 0;}
+        .r-0{right: 0;}
+        .t-0{top: 0;}
+        .t-100{top: 100%;}
+        .m-1{margin: 0.5rem;}
+        .m-2{margin: 1rem;}
+        .p-1{padding: 0.5rem;}
+        .p-2{padding: 1rem;}
+        .p-3{padding: 1.5rem;}
+        .p-4{padding: 1rem 2rem;}
+        .text-center{text-align: center;}
+        .bg-white{background-color: #ffffff;}
+        .font2em{font-size: 1.5em;}
+        .font1em{font-size: 1em;}
+        .col{width: 33.33333333%;}
+        .col-6{width: 66.66666666%;}
+        .flex-column{flex-direction: column;}
+    </style>
+</head>
+<body class="bg-white">
+    <div class="container position-relative">
+        <div id="wrap" class="">
+            <div class="inner d-flex justify-content-between align-items-center h-100">
+                <h2 class="logo"><a href="#none"><img src="./img/logo.png" alt="로고"></a></h2>
+                <ul class="d1ul d-flex align-items-center text-center">
+                    <li class="d1li position-relative">
+                        <a href="#none" class="d1a font2em">개인</a>
+                        <ul class="d2ul position-absolute overflow-hidden l-0 r-0 t-100">
+                            <li class="d2li font1em"><a href="#none" class="d2a">조회</a></li>
+                            <li class="d2li font1em"><a href="#none" class="d2a">이체</a></li>
+                            <li class="d2li font1em"><a href="#none" class="d2a">공과금</a></li>
+                            <li class="d2li font1em"><a href="#none" class="d2a">예금/신탁</a></li>
+                        </ul>
+                    </li>
+                    <li class="d1li position-relative">
+                        <a href="#none" class="d1a font2em">기업</a>
+                        <ul class="d2ul position-absolute overflow-hidden l-0 r-0 t-100">
+                            <li class="d2li font1em"><a href="#none" class="d2a">조회</a></li>
+                            <li class="d2li font1em"><a href="#none" class="d2a">이체</a></li>
+                            <li class="d2li font1em"><a href="#none" class="d2a">전자결제</a></li>
+                            <li class="d2li font1em"><a href="#none" class="d2a">수표/어음</a></li>
+                        </ul>
+                    </li>
+                    <li class="d1li position-relative">
+                        <a href="#none" class="d1a font2em">금융상품</a>
+                        <ul class="d2ul position-absolute overflow-hidden l-0 r-0 t-100">
+                            <li class="d2li font1em"><a href="#none" class="d2a">저축상품</a></li>
+                            <li class="d2li font1em"><a href="#none" class="d2a">대출상품</a></li>
+                            <li class="d2li font1em"><a href="#none" class="d2a">투자상품</a></li>
+                        </ul>
+                    </li>
+                    <li class="d1li position-relative">
+                        <a href="#none" class="d1a font2em">카드</a>
+                        <ul class="d2ul position-absolute overflow-hidden l-0 r-0 t-100">
+                            <li class="d2li font1em"><a href="#none" class="d2a">카드정보</a></li>
+                            <li class="d2li font1em"><a href="#none" class="d2a">카드신청</a></li>
+                            <li class="d2li font1em"><a href="#none" class="d2a">이용내역조회</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="slider" class="inner h-300 overflow-hidden">
+            <ul class="d-flex align-items-center">
+                <li class=""><a href="#none"><img src="./img/slide1.png" alt=""></a></li>
+                <li class=""><a href="#none"><img src="./img/slide2.png" alt=""></a></li>
+                <li class=""><a href="#none"><img src="./img/slide3.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="inner h-200 d-flex">
+            <div class="no_gal_Box col position-relative d-flex">
+                <div class="noticeBox on">
+                    <a href="#none">공지사항</a>
+                    <div class="notice position-absolute l-0 r-0">
+                        <div class="noti_text noti_text1"><a href="#none">공지사항공지사항공지사항공지사항</a><span>공지사항날짜</span></div>
+                        <div class="noti_text"><a href="#none">공지사항공지사항공지사항공지사항</a><span>공지사항날짜</span></div>
+                        <div class="noti_text"><a href="#none">공지사항공지사항공지사항공지사항</a><span>공지사항날짜</span></div>
+                        <div class="noti_text"><a href="#none">공지사항공지사항공지사항공지사항</a><span>공지사항날짜</span></div>
+                    </div>
+                </div>
+                <div class="galleryBox ">
+                    <a href="#none">갤러리</a>
+                    <div class="gallery l-0 r-0 position-absolute justify-content-around">
+                        <a href="#none"><img src="./img/gal1.png" alt="갤러리1"></a>
+                        <a href="#none"><img src="./img/gal2.png" alt="갤러리2"></a>
+                        <a href="#none"><img src="./img/gal3.png" alt="갤러리3"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="subBanner col">
+                <a href="#none"><img src="./img/banner.png" alt="서브배너"></a>
+            </div>
+            <div class="Link col">
+                <a href="#none"><img src="./img/link.png" alt="링크"></a>
+            </div>
+        </div>
+        <footer>
+            <div class="inner h-100 d-flex align-items-center">
+                <h3 class="logo"><a href="#none"><img src="./img/logo.png" alt="로고"></a></h3>
+                <div class="foot_Box text-center">
+                    <div class="foot_link d-flex justify-content-around">
+                        <a href="#none">하단메뉴1</a>
+                        <a href="#none">하단메뉴2</a>
+                        <a href="#none">하단메뉴3</a>
+                    </div>
+                    <p>Copyright</p>
+                </div>
+            </div>
+        </footer>
+        <div class="popBox bg-white border d-none">
+            <div class="pop d-flex flex-column justify-content-center align-items-center">
+                <a href="">팝업발생발생발생</a>
+                <button>close</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
