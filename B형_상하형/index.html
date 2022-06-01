@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인B형_상하슬라이드</title>
+    <link rel="stylesheet" href="./css/hj.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="./js/hj.js"></script>
+    <style>
+        *{margin: 0; padding: 0; text-decoration: none; list-style: none; color: #333333;}
+        a{padding: 0; margin: 0;}
+        .d-flex{display: flex;}
+        .d-none{display: none;}
+        .justify-content-between{justify-content: space-between;}
+        .justify-content-center{justify-content: center;}
+        .justify-content-around{justify-content: space-around;}
+        .align-items-center{align-items: center;}
+        .align-items-end{align-items: flex-end;}
+        .inner{width: 1200px; margin: 0 auto;}
+        .h-100{height: 100px;}
+        .h-200{height: 200px;}
+        .h-300{height: 300px;}
+        .position-absolute{position: absolute;}
+        .position-relative{position: relative;}
+        .border{border: 1px solid black;}
+        .overflow-hidden{overflow: hidden;}      
+        .l-0{left: 0;}
+        .r-0{right: 0;}
+        .t-0{top: 0;}
+        .b-0{bottom: 0;}
+        .t-100{top: 100%;}
+        .m-1{margin: 0.5rem;}
+        .m-2{margin: 1rem;}
+        .p-1{padding: 0.5rem;}
+        .p-2{padding: 1rem;}
+        .p-3{padding: 1.5rem;}
+        .p-4{padding: 1rem 2rem;}
+        .text-center{text-align: center;}
+        .bg-white{background-color: #ffffff;}
+        .font2em{font-size: 1.5em;}
+        .font1em{font-size: 1em;}
+        .col{width: 33.33333333%;}
+        .col-6{width: 66.66666666%;}
+        .flex-column{flex-direction: column;}
+    </style>
+</head>
+<body>
+    <div class="container position-relative">
+        <header id="wrap">
+            <div class="inner d-flex justify-content-between align-items-end h-100 position-relative">
+                <h1 class="logo"><a href="#none"><img src="./img/logo.png" alt="로고"></a></h1>
+                <ul class="d1ul d-flex text-center">
+                    <li class="d1li position-relative">
+                        <a href="#none" class="d1a">해외여행</a>
+                        <ul class="d2ul position-absolute overflow-hidden l-0 r-0 t-100">
+                            <li class="d2li"><a href="#none" class="d2a">동남아/대만</a></li>
+                            <li class="d2li"><a href="#none" class="d2a">중국/홍콩</a></li>
+                            <li class="d2li"><a href="#none" class="d2a">유럽/두바이</a></li>
+                            <li class="d2li"><a href="#none" class="d2a">미주/하와이</a></li>
+                        </ul>
+                    </li>
+                    <li class="d1li position-relative">
+                        <a href="#none" class="d1a">국내여행</a>
+                        <ul class="d2ul position-absolute overflow-hidden l-0 r-0 t-100">
+                            <li class="d2li"><a href="#none" class="d2a">서울/경기권</a></li>
+                            <li class="d2li"><a href="#none" class="d2a">충청권</a></li>
+                            <li class="d2li"><a href="#none" class="d2a">전라권</a></li>
+                            <li class="d2li"><a href="#none" class="d2a">경상/강원권</a></li>
+                        </ul>
+                    </li>
+                    <li class="d1li position-relative">
+                        <a href="#none" class="d1a">제주도</a>
+                        <ul class="d2ul position-absolute overflow-hidden l-0 r-0 t-100">
+                            <li class="d2li"><a href="#none" class="d2a">버스여행</a></li>
+                            <li class="d2li"><a href="#none" class="d2a">자유여행</a></li>
+                            <li class="d2li"><a href="#none" class="d2a">호텔/펜션</a></li>
+                        </ul>
+                    </li>
+                    <li class="d1li position-relative">
+                        <a href="#none" class="d1a">렌터카</a>
+                        <ul class="d2ul position-absolute overflow-hidden l-0 r-0 t-100">
+                            <li class="d2li"><a href="#none" class="d2a">국내 렌터카</a></li>
+                            <li class="d2li"><a href="#none" class="d2a">국외 렌터카</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="slider inner h-300 overflow-hidden">
+            <ul>
+                <li><a href="#none"><img src="./img/slide1.png" alt=""></a></li>
+                <li><a href="#none"><img src="./img/slide2.png" alt=""></a></li>
+                <li><a href="#none"><img src="./img/slide3.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="inner h-200 d-flex">
+            <div class="noti_Box col">
+                <a href="#none">공지사항</a>
+                <div class="notice">
+                    <div class="noti_Text noti_Text1 d-flex align-items-center "><a href="#none">공지사항내용공지사항내용공지사항내용공지사항내용</a><span>공지사항날짜</span></div>
+                    <div class="noti_Text d-flex align-items-center"><a href="#none">공지사항내용공지사항내용공지사항내용공지사항내용</a><span>공지사항날짜</span></div>
+                    <div class="noti_Text d-flex align-items-center"><a href="#none">공지사항내용공지사항내용공지사항내용공지사항내용</a><span>공지사항날짜</span></div>
+                    <div class="noti_Text d-flex align-items-center"><a href="#none">공지사항내용공지사항내용공지사항내용공지사항내용</a><span>공지사항날짜</span></div>
+                </div>
+            </div>
+            <div class="gall_Box col">
+                <a href="#none">갤러리</a>
+                <div class="gallery d-flex justify-content-around">
+                    <a href="#none" class="gll_img"><img src="./img/gal1.png" alt="갤러리"></a>
+                    <a href="#none" class="gll_img"><img src="./img/gal2.png" alt="갤러리"></a>
+                    <a href="#none" class="gll_img"><img src="./img/gal2.png" alt="갤러리"></a>
+                </div>
+            </div>
+            <div class="linkBox col">
+                <a href="#none"><img src="./img/link.png" alt="바로가기"></a>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="inner h-100 d-flex align-items-center">
+                <p class="foot_p text-center">Copyright</p>
+                <div class="siteBox text-center">
+                    <div class="snsBox">
+                        <a href="#none"><img src="./img/facebook.png" alt="페이스북"></a>
+                        <a href="#none"><img src="./img/blog.png" alt="블로그"></a>
+                        <a href="#none"><img src="./img/twitter.png" alt="트위터"></a>
+                    </div>
+                    <div class="familyBox">
+                        <select>
+                            <option value="">패밀리사이트</option>
+                            <option value="">패밀리사이트1</option>
+                            <option value="">패밀리사이트2</option>
+                            <option value="">패밀리사이트3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="popup position-absolute l-0 r-0 t-0 b-0 d-flex justify-content-center align-items-center d-none">
+            <div class="pop_Box border bg-white">
+                <div class="pop_text d-flex flex-column">
+                    <a href="">팝업이다아~</a>
+                    <button>close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

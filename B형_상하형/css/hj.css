@@ -1,0 +1,78 @@
+#wrap, #footer{
+    background-color: aquamarine !important;
+}
+.d1li{
+    padding: 10px 30px;
+}
+.d2li{
+    padding: 2px 0;
+    background-color: transparent;
+}
+.d1a{
+    font-size: 1.5em;
+}
+.d2a{
+    font-size: 1em;
+
+}
+
+.d2ul{
+    height: 0;
+    z-index: 2;
+    transition: 0.5s;
+
+}
+.d1ul:hover .d2ul{
+    height: 130px;
+}
+.d1ul::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 0;
+    transition: 0.5s;
+    background-color: aquamarine;
+}
+
+.d1ul:hover::after{
+    height: 130px;
+}
+
+.d1li:hover{
+    background-color: white;
+}
+.d2li:hover{
+    background-color: white;
+}
+.slider li{
+    line-height: 0;
+}
+.noti_Text>a{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    width: 300px;
+}
+
+.noti_Box>a, .gall_Box>a{
+    line-height: 3;
+}
+
+.noti_Text{
+    padding: 3px 0;
+}
+
+.foot_p{
+    width: 1000px;
+}
+.siteBox{
+    width: 200px;
+}
+
+.pop_Box{
+    width: 300px;
+    height: 300px;
+}
