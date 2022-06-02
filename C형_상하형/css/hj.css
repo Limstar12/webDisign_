@@ -1,0 +1,74 @@
+.d2ul{
+    transition: 1s;
+    height: 0;
+}
+.d1li:hover .d2ul{
+    height: 120px;
+}
+.d1ul{
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0 15px;
+}
+.d1li{
+    font-size: 1.5rem;
+    padding: 5px 0;
+}
+.d1li>a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.d1li:hover > a{
+    background-color: #de9521;
+}
+.d2li:hover{
+    background-color: #de9521;
+}
+.d2li{
+    font-size: 1rem;
+    padding: 3px 0;
+}
+.logo{
+    padding: 50px 0;
+}
+
+.navBox{
+    background-color: papayawhip;
+}
+.slider li{
+    line-height: 0;
+}
+
+.noti_Box > ul > li > a{
+    display: inline-block;
+    text-overflow: ellipsis;
+    width: 120px;
+    white-space: nowrap;
+}
+
+.noti_Box > a, .gall_Box > a{
+    line-height: 3;
+}
+
+.gall_Box > div > a> img{
+    width: 80px;
+    height: 80px;
+    opacity: 0.7;
+}
+.gall_Box > div > a> img:hover{
+    opacity: 1;
+}
+
+.gall_Box >div{
+    padding: 10px 0 20px;
+}
+
+footer > p{
+    width: 80%;
+    text-align: center;
+}
+
+footer > .foot_Box{
+    width: 20%;
+}
